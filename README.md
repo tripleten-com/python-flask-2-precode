@@ -7,7 +7,7 @@ git clone
 ```
 
 ```
-cd what_to_watch
+cd movie_review
 ```
 
 Cоздать и активировать виртуальное окружение:
