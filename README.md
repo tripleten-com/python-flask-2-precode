@@ -1,10 +1,6 @@
 ### For TR Team:
 README.md
 
-opinions_app/forms.py
-
-opinions_app/cli_commands.py
-
 opinions_app/templates/opinion.html
 
 opinions_app/templates/header.html
@@ -18,6 +14,12 @@ opinions_app/templates/add_opinion.html
 opinions_app/templates/500.html
 
 opinions_app/templates/404.html
+
+opinions_app/forms.py
+
+opinions_app/cli_commands.py
+
+opinions_app/views.py
 
 
 ### Как запустить проект:
