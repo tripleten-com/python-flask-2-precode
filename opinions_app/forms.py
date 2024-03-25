@@ -5,16 +5,16 @@ from wtforms.validators import DataRequired, Length, Optional
 
 class OpinionForm(FlaskForm):
     title = StringField(
-        'Введите название фильма',
-        validators=[DataRequired(message='Обязательное поле'),
+        'Enter the title of the movie',
+        validators=[DataRequired(message='Required field'),
                     Length(1, 128)]
     )
     text = TextAreaField(
-        'Напишите короткое ревью',
-        validators=[DataRequired(message='Обязательное поле')]
+        'Write a short review',
+        validators=[DataRequired(message='Required field')]
     )
     source = URLField(
-        'Добавьте ссылку на подробный обзор фильма',
+        'Add a link to a detailed movie review',
         validators=[Length(1, 256), Optional()]
     )
-    submit = SubmitField('Добавить')
+    submit = SubmitField('Add')

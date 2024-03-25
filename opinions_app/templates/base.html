@@ -9,14 +9,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='img/fav/favicon-16x16.png') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-    <title>{% block title %}Что посмотреть{% endblock title %}</title>
+    <title>{% block title %}What to watch{% endblock title %}</title>
   </head>
 
   <body>
-    <!-- Тут подключается шаблон header.html. Создадим его чуть позже -->
+    <!-- Here, you'll add the header.html template. We'll create it a little later -->
     {% include "header.html" %}
     {% block content %}{% endblock content %}
-    <!-- Тут подключается шаблон footer.html. Его тоже скоро создадим -->
+    <!-- Here, you'll add the footer.html template. We'll also create it soon -->
     {% include "footer.html" %}
   </body>
 </html>
