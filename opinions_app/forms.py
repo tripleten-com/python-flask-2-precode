@@ -3,7 +3,7 @@ from wtforms import StringField, TextAreaField, URLField, SubmitField
 from wtforms.validators import DataRequired, Length, Optional
 
 
-class OpinionForm(FlaskForm):
+class ReviewForm(FlaskForm):
     title = StringField(
         'Enter the title of the movie',
         validators=[DataRequired(message='Required field'),
