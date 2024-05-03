@@ -3,18 +3,18 @@ import csv
 import click
 
 from . import app, db
-from .models import Opinion
+from .models import Review
 
 
-@app.cli.command('load_opinions')
-def load_opinions_command():
+@app.cli.command('load_reviews')
+def load_reviews_command():
     """The function for uploading reviews to the database."""
-    with open('opinions.csv', encoding='utf-8') as f:
+    with open('reviews.csv', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         counter = 0
         for row in reader:
-            opinion = Opinion(**row)
-            db.session.add(opinion)
+            review = Review(**row)
+            db.session.add(review)
             db.session.commit()
             counter += 1
     click.echo(f'Loaded reviews: {counter}')
