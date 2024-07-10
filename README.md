@@ -36,7 +36,16 @@ python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Run the project:
+Add values to env variables in .env:
+
+```
+FLASK_APP=
+FLASK_DEBUG=
+DATABASE_URI=
+SECRET_KEY=
+```
+
+Create and apply migrations, then run the project:
 
 ```
 flask run
